@@ -3,23 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[Javascript]]></title>
-      <url>%2F2017%2F05%2F02%2FJavascript%2F</url>
-      <content type="text"></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[tongjicheshi]]></title>
-      <url>%2F2017%2F04%2F28%2Ftongjicheshi%2F</url>
-      <content type="text"></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[test]]></title>
-      <url>%2F2017%2F04%2F28%2Ftest%2F</url>
-      <content type="text"></content>
+      <title><![CDATA[如何用js禁用某个div的鼠标事件]]></title>
+      <url>%2F2017%2F04%2F28%2Fjs%E7%A6%81%E7%94%A8%E9%BC%A0%E6%A0%87%E9%BB%98%E8%AE%A4%E4%BA%8B%E4%BB%B6%2F</url>
+      <content type="text"><![CDATA[问题描述：我希望禁用指定div上的所有鼠标事件，包括左键，中键，右键。 解决方案：1234567// 给指定div注册鼠标按下事件div.addEventListener(&apos;mousedown&apos;,mouseEvent,true);// 给指定div注册上下文菜单事件div.addEventListener(&apos;contextmenu&apos;,mouseEvent,true);function mouseEvent(e)&#123; e.preventDefault(); &#125;]]></content>
     </entry>
 
     
