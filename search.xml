@@ -10,6 +10,13 @@
 
     
     <entry>
+      <title><![CDATA[为什么要用settimeout而不用setinterval]]></title>
+      <url>%2F2017%2F04%2F28%2F%E4%B8%BA%E4%BB%80%E4%B9%88%20%E8%A6%81%E7%94%A8settimeout%E8%80%8C%E4%B8%8D%E7%94%A8setinterval%2F</url>
+      <content type="text"><![CDATA[问题描述：使用setInterval做循环时，如果执行的代码在间隔时间内没有执行完，最后会挤在一起执行。 解决方案： 原因：setInterval不会考虑代码的执行时间，有可能代码还没有执行完就再次调用了代码，这样所有没执行完的代码都会排在事件队列末尾，cpu空闲时一起执行了剩余的代码。（只是个人理解不一定准确） 我想要的效果是间隔固定时间后执行一段代码，代码执行完后，间隔相同的时间再次执行这段代码。 可以用settimeout实现 1234setTimeout(function()&#123; //do something setTimeout(arguments.callee, time); &#125;, time);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>%2F2017%2F04%2F28%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
