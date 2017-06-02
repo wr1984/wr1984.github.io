@@ -75,7 +75,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript, Nodejs,Threejs,GreenSock,Vuejs" />
+  <meta name="keywords" content="手机web,摇一摇,devicemotion," />
 
 
 
@@ -91,15 +91,19 @@
 
 
 
-<meta name="description" content="开心的活着，做自己喜欢的事">
-<meta property="og:type" content="website">
-<meta property="og:title" content="王睿的博客-记录遇到的问题和解决方案">
-<meta property="og:url" content="http://yoursite.com/tags/禁用鼠标/index.html">
+<meta name="description" content="问题描述：手机打开网页时，想在用户摇一摇手机后做些动画效果。 解决方案： html5提供了几个新的DOM事件来获得设备物理方向及运动的信息，包括：陀螺仪、罗盘及加速计。   第一个DOM事件是deviceorientation，其提供设备的物理方向信息，表示为一系列本地坐标系的旋角。   第二个DOM事件是devicemotion，其提供设备的加速信息，表示为定义在设备上的坐标系中的卡尔迪坐标。其">
+<meta name="keywords" content="手机web,摇一摇,devicemotion">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手机web监听摇一摇事件">
+<meta property="og:url" content="http://yoursite.com/2017/06/02/手机web监听摇一摇事件/index.html">
 <meta property="og:site_name" content="王睿的博客-记录遇到的问题和解决方案">
-<meta property="og:description" content="开心的活着，做自己喜欢的事">
+<meta property="og:description" content="问题描述：手机打开网页时，想在用户摇一摇手机后做些动画效果。 解决方案： html5提供了几个新的DOM事件来获得设备物理方向及运动的信息，包括：陀螺仪、罗盘及加速计。   第一个DOM事件是deviceorientation，其提供设备的物理方向信息，表示为一系列本地坐标系的旋角。   第二个DOM事件是devicemotion，其提供设备的加速信息，表示为定义在设备上的坐标系中的卡尔迪坐标。其">
+<meta property="og:image" content="http://yoursite.com/2017/06/02/手机web监听摇一摇事件/yaoyiyao.png">
+<meta property="og:updated_time" content="2017-06-02T08:04:09.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王睿的博客-记录遇到的问题和解决方案">
-<meta name="twitter:description" content="开心的活着，做自己喜欢的事">
+<meta name="twitter:title" content="手机web监听摇一摇事件">
+<meta name="twitter:description" content="问题描述：手机打开网页时，想在用户摇一摇手机后做些动画效果。 解决方案： html5提供了几个新的DOM事件来获得设备物理方向及运动的信息，包括：陀螺仪、罗盘及加速计。   第一个DOM事件是deviceorientation，其提供设备的物理方向信息，表示为一系列本地坐标系的旋角。   第二个DOM事件是devicemotion，其提供设备的加速信息，表示为定义在设备上的坐标系中的卡尔迪坐标。其">
+<meta name="twitter:image" content="http://yoursite.com/2017/06/02/手机web监听摇一摇事件/yaoyiyao.png">
 
 
 
@@ -127,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/禁用鼠标/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/02/手机web监听摇一摇事件/"/>
 
 
 
 
 
-  <title>标签: 禁用鼠标 | 王睿的博客-记录遇到的问题和解决方案</title>
+  <title>手机web监听摇一摇事件 | 王睿的博客-记录遇到的问题和解决方案</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -296,46 +300,240 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        禁用鼠标
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/02/手机web监听摇一摇事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rui Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王睿的博客-记录遇到的问题和解决方案">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                手机web监听摇一摇事件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-02T11:40:36+08:00">
+                2017-06-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Javascript/js小知识点/" itemprop="url" rel="index">
+                    <span itemprop="name">js小知识点</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/02/手机web监听摇一摇事件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/06/02/手机web监听摇一摇事件/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>手机打开网页时，想在用户摇一摇手机后做些动画效果。</p>
+<h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><ul>
+<li><p>html5提供了几个新的DOM事件来获得设备物理方向及运动的信息，包括：陀螺仪、罗盘及加速计。</p>
+<p>  第一个DOM事件是<strong>deviceorientation</strong>，其提供设备的物理方向信息，表示为一系列本地坐标系的旋角。</p>
+<p>  第二个DOM事件是<strong>devicemotion</strong>，其提供设备的加速信息，表示为定义在设备上的坐标系中的卡尔迪坐标。其还提供了设备在坐标系中的自转速率。</p>
+<p>  第三个DOM事件是<strong>compassneedscalibration</strong>，其用于通知Web站点使用罗盘信息校准上述事件</p>
+</li>
+</ul>
+<p><img src="yaoyiyao.png" alt="坐标轴示意图" title="手机坐标系示意图"></p>
+<ul>
+<li>监听devicemotion事件</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//判断是否支持该事件</span></div><div class="line"><span class="keyword">if</span>(<span class="built_in">window</span>.DeviceMotionEvent)&#123;</div><div class="line">	 <span class="built_in">window</span>.addEventListener(<span class="string">'devicemotion'</span>, deviceMotionHandler, <span class="literal">false</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>摇一摇demo</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> SHAKE_THRESHOLD = <span class="number">800</span>;</div><div class="line"><span class="keyword">var</span> last_update = <span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> x, y, z, last_x, last_y, last_z;       </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deviceMotionHandler</span>(<span class="params">eventData</span>) </span>&#123;        </div><div class="line">  <span class="keyword">var</span> acceleration =eventData.accelerationIncludingGravity;</div><div class="line">  <span class="keyword">var</span> curTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();       </div><div class="line">  <span class="keyword">if</span> ((curTime - last_update)&gt; <span class="number">300</span>) &#123;                </div><div class="line">      <span class="keyword">var</span> diffTime = curTime -last_update;</div><div class="line">      last_update = curTime;       </div><div class="line">      x = acceleration.x;</div><div class="line">      y = acceleration.y;</div><div class="line">      z = acceleration.z;       </div><div class="line">      <span class="keyword">var</span> speed = <span class="built_in">Math</span>.abs(x +y + z - last_x - last_y - last_z) / diffTime * <span class="number">10000</span>;          </div><div class="line">           <span class="keyword">if</span> (speed &gt; SHAKE_THRESHOLD) &#123;</div><div class="line">                alert(<span class="string">"shaked!"</span>);</div><div class="line">      &#125;</div><div class="line">      last_x = x;</div><div class="line">      last_y = y;</div><div class="line">      last_z = z;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
 
-      <h1 class="post-title">
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/04/28/js禁用鼠标默认事件/" itemprop="url">
-              
-                <span itemprop="name">如何用js禁用某个div的鼠标事件</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果本文解决了您的问题，求赏！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/pay/wechat-reward-image.png" alt="Rui Wang WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/pay/alipay-reward-image.jpg" alt="Rui Wang Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-28T11:40:36+08:00"
-              content="2017-04-28" >
-          04-28
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/手机web/" rel="tag"># 手机web</a>
+          
+            <a href="/tags/摇一摇/" rel="tag"># 摇一摇</a>
+          
+            <a href="/tags/devicemotion/" rel="tag"># devicemotion</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/28/js禁用鼠标默认事件/" rel="prev" title="如何用js禁用某个div的鼠标事件">
+                如何用js禁用某个div的鼠标事件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -343,6 +541,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
 
         </div>
         
@@ -362,8 +566,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -425,6 +638,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述："><span class="nav-number">1.</span> <span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案："><span class="nav-number">2.</span> <span class="nav-text">解决方案：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -538,6 +767,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
@@ -561,6 +794,8 @@
 
 		_hcwp.push({widget:"Bloggerstream", widget_id: 90237, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
+		
+		_hcwp.push({widget:"Stream", widget_id: 90237, xid: "2017/06/02/手机web监听摇一摇事件/"});
 		
 
 		(function() {
